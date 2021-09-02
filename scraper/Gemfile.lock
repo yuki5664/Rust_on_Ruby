@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    scraper (0.1.0)
+      ffi
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.15.4-x64-mingw32)
+    rake (13.0.6)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  rake (~> 13.0)
+  scraper!
+
+BUNDLED WITH
+   2.2.26

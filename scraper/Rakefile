@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+require "bundler/gem_tasks"
+task default: %i[]
+
+task :rust do
+    `cargo rustc --release`
+    `move /y ./target/release ./lib/scraper`
+  end
+  
+  task :build => :rust
+  task :spec => :rust
